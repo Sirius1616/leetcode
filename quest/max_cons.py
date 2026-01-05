@@ -19,5 +19,6 @@ class Solution(object):
 
 test = Solution()
 
-
+res = test.findMaxConsecutiveOnes([1,1,0,1,1,1])
+print(res)
         
