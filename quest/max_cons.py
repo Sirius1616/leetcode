@@ -1,16 +1,24 @@
+#!/usr/bin/env python
+
 class Solution(object):
     def findMaxConsecutiveOnes(self, nums):
         """
         :type nums: List[int]
         :rtype: int
         """
-        count = 0
+        count = 1
         temp_list = []
         len_num = len(nums)
-        for i in range(len_num):
-            if num[i] == num[i+1]
-            count += 1
+        for i in range(len_num-1):
+            if nums[i] == nums[i+1]:
+                count += 1
             else:
                 temp_list.append(count)
                 count = 0
+        return temp_list
+
+test = Solution()
+
+res = test.findMaxConsecutiveOnes([1,1,0,1,1,1])
+print(res)
         
