@@ -6,19 +6,19 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        count = 1
-        temp_list = []
-        len_num = len(nums)
-        for i in range(len_num-1):
-            if nums[i] == nums[i+1]:
+        count = 0 
+        max_count = 0
+        for i in nums:
+            if i == 1:
                 count += 1
+                if count > max_count:
+                    max_count = count
             else:
-                temp_list.append(count)
                 count = 0
-        return temp_list
+        return max_count
 
 test = Solution()
 
-res = test.findMaxConsecutiveOnes([1,1,0,1,1,1])
+res = test.findMaxConsecutiveOnes([1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1])
 print(res)
         
