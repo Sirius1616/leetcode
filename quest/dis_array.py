@@ -10,7 +10,7 @@ class Solution(object):
         max_num = max(nums)
 
         min_max = range(min_num, max_num+1)
-        list_dis = nums - min_max
+        list_dis = [x for x in min_max not in num]
         return list_dis
 
 
