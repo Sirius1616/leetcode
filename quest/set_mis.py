@@ -25,5 +25,5 @@ class Solution(object):
 
 
 new = Solution()
-test_nums = [1,1]
+test_nums = [2,2]
 print(new.findErrorNums(test_nums))
