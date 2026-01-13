@@ -9,8 +9,8 @@ class Solution(object):
         min_num = min(nums)
         max_num = max(nums)
 
-        min_max = range(min_num, max_num+1)
-        list_dis = [x for x in min_max not in num]
+        min_max = list(range(min_num, max_num+1))
+        list_dis = [x for x in min_max if x not in nums]
         return list_dis
 
 
